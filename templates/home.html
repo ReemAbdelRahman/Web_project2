@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="home.js"></script>
+    <title>Rimonada!</title>
+  </head>
+  <body>
+    <div id = "box">
+   <h1>Welcome to Rimonada!</h1>
+   <h2>Your Free Chat Application</h2>
+   <div id="box2">
+        <form method="post">
+     <button id = "register" type="button">Register</button>
+     <button id = "login" type="button">Log in</button>
+     <p></p>
+   </form>
+   <div id = "reg_div">
+        <form action="{{url_for('chat')}}" method="post">
+          <input type="text" placeholder = "Display name" name="display_name">
+          <p></p>
+          <input type="password" placeholder = "Password" name="password">
+          <p></p>
+          <button type="submit">Register</button>
+        </form>
+   </div>
+   <div id = "log_div">
+     <form action="{{url_for('chat')}}" method="post">
+       <input type="text" placeholder = "Display name" name="display_name">
+       <p></p>
+       <input type="password" placeholder = "Password" name="password">
+       <p></p>
+       <button type="submit">Log in</button>
+     </form>
+   </div>
+   </div>
+ </div>
+  </body>
+</html>

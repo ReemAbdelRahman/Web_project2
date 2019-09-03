@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="chat.js"></script>
+    <title></title>
+  </head>
+  <body>
+   <button formaction = "{{url_for('create_action')}}" type="submit" name="button">create group</button>
+  </body>
+  <div id = "groups">
+    <li><a href="{{url_for('fetch_group')}}"></a></li>
+  </div>
+  <form class="" action="index.html" method="post">
+  </form>
+  <div id = "messages">
+
+   <form id = "mymessage" method="post">
+     <input type="text" placeholder = "type a message">
+     <button type="submit" name="button">Send</button>
+   </form>
+    </div>
+</html>
