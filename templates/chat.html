@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-   <button formaction = "{{url_for('create_action')}}" type="submit" name="button">create group</button>
+   <button id = "create_group" formaction = "{{url_for('create_action')}}" type="submit" name="button"> Create Group</button>
   </body>
   <div id = "groups">
     <li><a href="{{url_for('fetch_group')}}"></a></li>
@@ -13,10 +13,20 @@
   <form class="" action="index.html" method="post">
   </form>
   <div id = "messages">
+      <form method="post">
+        <input id="mymessage" type="text" placeholder = "type a message">
+        <button id="send" type="submit" name="button">Send</button>
+      </form>
 
-   <form id = "mymessage" method="post">
-     <input type="text" placeholder = "type a message">
-     <button type="submit" name="button">Send</button>
-   </form>
+    </div>
+
+    <div id ="popup">
+      <form  method="post">
+        <input style="height:10px; width:200px; opacity:1;" type="text" name="group_name">
+        <p></p>
+        <button id = "create" type="submit" formaction = "{{url_for('create_group')}}">Create</button>
+        <button onclick="hide_create();">Cancel</button>
+      </form>
+
     </div>
 </html>

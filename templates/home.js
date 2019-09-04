@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+  document.body.style.backgroundImage = "url('Presentation1.png')";
+
   let box = document.querySelector('#box');
   let box2 = document.querySelector('#box2');
 
   box.style.marginLeft = '30%';
   box.style.textAlign = 'center';
   box.style.marginTop = '15%';
-  box.style.backgroundColor = 'purple';
+  box.style.backgroundColor = '#ab7890';
   box.style.padding = '5%';
   box.style.width = '350px';
 
@@ -31,11 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
     button.style.borderRadius = '6px';
     button.style.color = 'white';
     button.style.padding = '5px';
+    button.style.width = '100px'
     button.onmousemove = function(){
-      button.style.backgroundColor = 'green';
+      button.style.backgroundColor = 'white';
+      button.style.color = 'grey';
     }
     button.onmouseout = function(){
-      button.style.backgroundColor = 'black';
+      button.style.backgroundColor = 'grey';
+      button.style.color = 'white';
     };
   });
 });
